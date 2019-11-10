@@ -16,7 +16,7 @@ class Song
   end
   
   def artist_name=(name)
-    self.all.each do |song|
+    all.each do |song|
       if song.artist.name == name
         return song
       end

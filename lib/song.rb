@@ -15,6 +15,10 @@ class Song
     return song
   end
   
+  def artist_name
+    return @artist == nil ? nil : @artist.name
+  end
+  
   def self.all
     return @@all
   end

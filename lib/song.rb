@@ -21,10 +21,7 @@ class Song
         return song
       end
     end
-    song = self.new
-    song.artist.name = name
-    @@all << song
-    return song
+    @artist.name = name
   end
   
   def self.all

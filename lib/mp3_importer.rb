@@ -12,6 +12,7 @@ class MP3Importer
       temp = file.split('/')
       pp temp
       file = temp.last
+      puts file
     end
     return @files
   end

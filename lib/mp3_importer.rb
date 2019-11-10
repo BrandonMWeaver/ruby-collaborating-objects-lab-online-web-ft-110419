@@ -10,7 +10,7 @@ class MP3Importer
     @files = Dir["#{@path}/**/*.mp3"]
     i = 0
     while i < @files.size do
-      files[i] = @files[i].split('/').last
+      @files[i] = @files[i].split('/').last
       i += 1
     end
     

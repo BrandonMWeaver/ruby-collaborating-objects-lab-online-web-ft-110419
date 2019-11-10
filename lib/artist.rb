@@ -25,7 +25,6 @@ class Artist
       end
     end
     artist = self.new(name)
-    @@all << artist
     return artist
   end
   

@@ -13,14 +13,6 @@ class MP3Importer
       @files[i] = @files[i].split('/').last
       i += 1
     end
-    
-    #@files.each do |file|
-    #  temp = file.split('/')
-    #  file = temp.last
-    #  puts file
-    #end
-    #pp @files
-    
     return @files
   end
   

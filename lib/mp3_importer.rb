@@ -11,7 +11,7 @@ class MP3Importer
     @files.each do |file|
       temp = file.split('/')
       pp temp
-      file = temp[temp.size - 1]
+      file = temp.last
       puts file
     end
     return @files

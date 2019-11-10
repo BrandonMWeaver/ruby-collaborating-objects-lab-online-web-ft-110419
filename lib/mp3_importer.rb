@@ -3,11 +3,10 @@ class MP3Importer
   
   def initialize(path)
     @path = path
-    @files = Dir["#{@path}"]
+    @files = Dir["#{@path}/**/*.mp3"]
   end
   
   def files
-    @files = Dir["#{@path}/**/*.mp3"]
     i = 0
     while i < @files.size do
       @files[i] = @files[i].split('/').last

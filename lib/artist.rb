@@ -20,7 +20,7 @@ class Artist
         return artist
       end
     end
-    artist = self.new(name)
+    @name = name
     return artist
   end
   

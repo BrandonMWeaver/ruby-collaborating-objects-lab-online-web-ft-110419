@@ -16,12 +16,7 @@ class Song
   end
   
   def artist_name=(name)
-    @@all.each do |song|
-      if song.artist.name == name
-        @artist.name = name
-      end
-    end
-    @artist.name = name
+    
   end
   
   def self.all

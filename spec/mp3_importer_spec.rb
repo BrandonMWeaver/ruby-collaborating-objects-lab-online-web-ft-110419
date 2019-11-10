@@ -34,9 +34,9 @@ describe "MP3Importer" do
     it 'imports the files into the library by creating songs from a filename' do
       test_music_path = "./spec/fixtures/mp3s"
       music_importer = MP3Importer.new(test_music_path)
-
-      expect(Song).to receive(:new_by_filename).at_least(4).times
+      
       music_importer.import
+      expect(Song).to receive(:new_by_filename).at_least(4).times
     end
   end
 end

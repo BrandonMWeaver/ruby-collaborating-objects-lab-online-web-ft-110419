@@ -18,7 +18,7 @@ class Song
   def artist_name=(name)
     @@all.each do |song|
       if song.artist.name == name
-        return song
+        @artist.name = name
       end
     end
     @artist.name = name

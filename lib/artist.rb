@@ -21,6 +21,7 @@ class Artist
       end
     end
     @name = name
+    @@all << self
     return artist
   end
   

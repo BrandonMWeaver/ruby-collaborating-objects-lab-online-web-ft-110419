@@ -13,6 +13,7 @@ class MP3Importer
       file = temp.last
       puts file
     end
+    pp @files
     return @files
   end
   

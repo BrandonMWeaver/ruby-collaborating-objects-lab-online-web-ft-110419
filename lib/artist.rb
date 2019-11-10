@@ -18,6 +18,17 @@ class Artist
     return Song.all.select { |song| song.artist == self }
   end
   
+  def find_or_create_by_name(name)
+    @@all.each do |artist|
+      if artist.name == name
+        return artist
+      end
+    end
+    artist = self.new(name)
+    @@all << artist
+    return artist
+  end
+  
   def self.all
     return @@all
   end

@@ -15,8 +15,16 @@ class Song
     return song
   end
   
-  def artist_name
-    return @artist == nil ? nil : @artist.name
+  def artist_name=(name)
+    self.all.each do |song|
+      if song.artist.name == name
+        return song
+      end
+    end
+    song = self.new
+    song.artist.name = name
+    @@all << song
+    return song
   end
   
   def self.all

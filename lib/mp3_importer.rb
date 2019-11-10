@@ -11,6 +11,7 @@ class MP3Importer
     @files.each do |file|
       file = file.split('/').last
     end
+    return @files
   end
   
   def import

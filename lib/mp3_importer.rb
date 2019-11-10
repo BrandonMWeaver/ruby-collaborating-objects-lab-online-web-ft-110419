@@ -9,7 +9,7 @@ class MP3Importer
   def files
     @files = Dir["#{@path}/**/*.mp3"]
     @files.each do |file|
-      file = file.split('/').last
+      file = file.split("//").last
     end
     return @files
   end

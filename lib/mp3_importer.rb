@@ -8,12 +8,19 @@ class MP3Importer
   
   def files
     @files = Dir["#{@path}/**/*.mp3"]
-    @files.each do |file|
-      temp = file.split('/')
-      file = temp.last
-      puts file
+    i = 0
+    while i < @files.size do
+      files[i] = @files[i].split('/').last
+      i += 1
     end
-    pp @files
+    
+    #@files.each do |file|
+    #  temp = file.split('/')
+    #  file = temp.last
+    #  puts file
+    #end
+    #pp @files
+    
     return @files
   end
   
